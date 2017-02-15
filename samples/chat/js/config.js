@@ -6,7 +6,11 @@ var QBApp = {
 
 var config = {
     chatProtocol: {
-        active: 2
+        active: 1
+    },
+    endpoints: {
+        api: "api.quickblox.com", // set custom API endpoint
+        chat: "10.61.191.194" // set custom Chat endpoint
     },
     streamManagement: {
         enable: true

@@ -105,7 +105,7 @@ var config = {
 config.set = function(options) {
   if (typeof options.endpoints === 'object' && options.endpoints.chat) {
     config.endpoints.muc = 'muc.'+options.endpoints.chat;
-    config.chatProtocol.bosh = 'https://'+options.endpoints.chat+':5281';
+    config.chatProtocol.bosh = 'https://'+options.endpoints.chat+':5281/http-bind/';
     config.chatProtocol.websocket = 'wss://'+options.endpoints.chat+':5291';
   }
 
